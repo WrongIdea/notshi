@@ -32,7 +32,8 @@ export default function Footer() {
         </div>
 
         <p className="text-zinc-700 text-xs text-center">
-          © {new Date().getFullYear()} Big Deal Entertainment. All rights reserved. · Powered by{" "}
+          © {new Date().getFullYear()} Big Deal Entertainment. All rights reserved.{" "}
+          · Powered by{" "}
           <a
             href="https://lotus-efkt-portfolio.vercel.app/"
             target="_blank"
