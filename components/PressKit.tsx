@@ -64,8 +64,18 @@ export default function PressKit() {
             </div>
 
             <a
+              href="/Black Bold Minimalist Musician Media Kit.pdf"
+              download
+              className="mt-auto w-full py-3 rounded-xl bg-[#D4AF37] hover:bg-[#c9a42e] text-black font-black text-sm tracking-widest uppercase text-center transition-colors flex items-center justify-center gap-2"
+            >
+              <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current" aria-hidden>
+                <path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 4h14v-2H5v2z"/>
+              </svg>
+              Download Press Kit
+            </a>
+            <a
               href="#booking"
-              className="mt-auto w-full py-3 rounded-xl bg-[#D4AF37] hover:bg-[#c9a42e] text-black font-black text-sm tracking-widest uppercase text-center transition-colors"
+              className="w-full py-3 rounded-xl border border-zinc-700 hover:border-[#D4AF37] text-zinc-400 hover:text-[#D4AF37] font-black text-sm tracking-widest uppercase text-center transition-colors"
             >
               Contact for Press Enquiries
             </a>
