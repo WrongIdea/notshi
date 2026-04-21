@@ -31,17 +31,17 @@ export default function Footer() {
           ))}
         </div>
 
-        <p className="text-zinc-700 text-xs">
-          © {new Date().getFullYear()} Big Deal Entertainment. All rights reserved.
+        <p className="text-zinc-700 text-xs text-center">
+          © {new Date().getFullYear()} Big Deal Entertainment. All rights reserved. · Powered by{" "}
+          <a
+            href="https://lotus-efkt-portfolio.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[#D4AF37] transition-colors font-bold"
+          >
+            LotusEfkt
+          </a>
         </p>
-        <a
-          href="https://lotus-efkt-portfolio.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-zinc-700 hover:text-[#D4AF37] text-xs transition-colors uppercase tracking-widest font-bold"
-        >
-          Powered by LotusEfkt
-        </a>
       </div>
     </footer>
   );
