@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Countdown from "@/components/Countdown";
+import SocialStats from "@/components/SocialStats";
 import Music from "@/components/Music";
 import VideoSection from "@/components/VideoSection";
 import Events from "@/components/Events";
@@ -18,6 +19,7 @@ export default function Home() {
       <main>
         <Hero />
         <Countdown />
+        <SocialStats />
         <Music />
         <VideoSection />
         <Events />

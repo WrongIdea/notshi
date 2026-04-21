@@ -3,6 +3,7 @@ const socials = [
   { label: "Twitter / X", href: "https://x.com/Notshi_" },
   { label: "YouTube", href: "https://www.youtube.com/c/Notshi" },
   { label: "Facebook", href: "https://www.facebook.com/NotshiSA" },
+  { label: "TikTok", href: "https://www.tiktok.com/@notshi_" },
 ];
 
 export default function Footer() {
