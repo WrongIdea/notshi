@@ -1,6 +1,12 @@
 "use client";
 import { useInView } from "@/hooks/useInView";
 
+const videos = [
+  { id: "7VynIoP527Y", title: "Notshi — Video 1" },
+  { id: "C66_gE0fuOw", title: "Notshi — Video 2" },
+  { id: "9bAPtAX7ysQ", title: "Notshi — Video 3" },
+];
+
 export default function VideoSection() {
   const { ref, inView } = useInView();
 
@@ -16,15 +22,30 @@ export default function VideoSection() {
           ref={ref}
           className={`transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
-          {/* Featured video embed */}
-          <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-zinc-800 mb-6">
+          {/* Featured video — large */}
+          <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-zinc-800 mb-4">
             <iframe
-              src="https://www.youtube.com/embed?listType=user_uploads&list=Notshi"
-              title="Notshi — YouTube"
+              src={`https://www.youtube.com/embed/${videos[0].id}`}
+              title={videos[0].title}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="absolute inset-0 w-full h-full"
             />
+          </div>
+
+          {/* Two smaller videos side by side */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+            {videos.slice(1).map((v) => (
+              <div key={v.id} className="relative w-full aspect-video rounded-2xl overflow-hidden border border-zinc-800">
+                <iframe
+                  src={`https://www.youtube.com/embed/${v.id}`}
+                  title={v.title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                />
+              </div>
+            ))}
           </div>
 
           <div className="text-center">

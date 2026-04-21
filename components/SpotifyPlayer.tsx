@@ -15,7 +15,7 @@ export default function SpotifyPlayer() {
       <iframe
         src="https://open.spotify.com/embed/artist/2eXNn1aARmG8QeU3x2VPAJ?utm_source=generator&theme=0"
         width="100%"
-        height="352"
+        height="500"
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
         className="rounded-2xl border border-zinc-800"
