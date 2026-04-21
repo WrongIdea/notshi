@@ -41,6 +41,7 @@ export default function Footer() {
           >
             LotusEfkt
           </a>
+          {" "}· v{new Date().getTime()}
         </p>
       </div>
     </footer>
