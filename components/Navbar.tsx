@@ -3,8 +3,10 @@ import { useState, useEffect } from "react";
 
 const links = [
   { label: "Music", href: "#music" },
-  { label: "About", href: "#about" },
-  { label: "Gallery", href: "#gallery" },
+  { label: "Videos", href: "#videos" },
+  { label: "Events", href: "#events" },
+  { label: "Merch", href: "#merch" },
+  { label: "Press", href: "#press" },
 ];
 
 export default function Navbar() {

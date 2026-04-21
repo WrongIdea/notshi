@@ -1,3 +1,5 @@
+import SpotifyPlayer from "./SpotifyPlayer";
+
 const platforms = [
   {
     name: "Spotify",
@@ -52,6 +54,11 @@ export default function Music() {
               {p.name}
             </a>
           ))}
+        </div>
+
+        {/* Spotify embed */}
+        <div className="mb-10">
+          <SpotifyPlayer />
         </div>
 
         {/* Upcoming album */}
